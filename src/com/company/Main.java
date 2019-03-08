@@ -4,6 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+
+        byteShortInt();
+    }
+
+
+    public static void byteShortInt() {
         int myValue = 1000;
         // int has a width of 32
         int myMinValue = -2_147_483_648;    // -214748364
@@ -48,6 +54,20 @@ public class Main {
         System.out.println("longDiv2 = " + longDiv2);
         System.out.println("myLongDiv = " + myLongDiv);
         System.out.println("shortMulti = " + shortMulti);
-
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
