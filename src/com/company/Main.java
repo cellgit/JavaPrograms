@@ -7,6 +7,43 @@ public class Main {
 
         byteShortInt();
         floatAndDouble();
+        charAndBoolean();
+        strings();
+    }
+
+
+    public static void strings() {
+        String myString = "This is a string";
+        System.out.println("This is a string: " + myString);
+
+        myString = myString + "\u00A92015";
+        System.out.println("Unicode String: " + myString);
+
+        String numberString = "250.55";
+        numberString = numberString + "49.95";
+        System.out.println("The Result is: : " + numberString);
+
+        String lastString = "10";
+        int myInt = 50;
+        lastString = lastString + myInt;
+        System.out.println("The lastString Result is: : " + lastString);
+
+        double doubleNumber = 120.47;
+        lastString = lastString + doubleNumber;
+        System.out.println("The doubleNumber lastString Result is: : " + lastString);
+    }
+
+
+
+    public static void charAndBoolean() {
+        char myChar = '\u00A9';
+        System.out.println("Unicode output was: " + myChar);
+
+        boolean myBoolean = false;
+        boolean isMale = true;
+
+        char registeredSymbol = '\u00AE';
+        System.out.println(" The Second Unicode output was: " + registeredSymbol);
     }
 
 
@@ -18,6 +55,12 @@ public class Main {
         System.out.println("myIntvale = " + myIntValue);
         System.out.println("myFloatValue = " + myFloatValue);
         System.out.println("myDoubleValue = " + myDoubleValue);
+
+        double numPounds = 200d;
+        double convertedKilograms = numPounds * 0.45359237d;
+        System.out.println("kilograms = " + convertedKilograms);
+
+        double pi = 3_000_000.141_5927d;
     }
 
 
