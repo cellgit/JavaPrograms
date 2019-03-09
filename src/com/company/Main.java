@@ -6,6 +6,18 @@ public class Main {
 	// write your code here
 
         byteShortInt();
+        floatAndDouble();
+    }
+
+
+    public static void floatAndDouble() {
+        int myIntValue = 5 / 3;
+        float myFloatValue = 5f / 3f;
+        double myDoubleValue = 5d / 3d;
+
+        System.out.println("myIntvale = " + myIntValue);
+        System.out.println("myFloatValue = " + myFloatValue);
+        System.out.println("myDoubleValue = " + myDoubleValue);
     }
 
 
