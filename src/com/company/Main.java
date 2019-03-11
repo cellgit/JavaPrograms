@@ -2,14 +2,65 @@ package com.company;
 
 public class Main {
 
+    private static final String INVALID_VALUE_MESSAGE = "Invalid value";
+
     public static void main(String[] args) {
 	// write your code here
 
-        byteShortInt();
-        floatAndDouble();
-        charAndBoolean();
-        strings();
+//        byteShortInt();
+//        floatAndDouble();
+//        charAndBoolean();
+//        strings();
+
+        /// lesson 40: minutes and seconds chanllenge
+        System.out.println(getDuringString(65, 45));
+        System.out.println(getDuringString(3945L));
+        System.out.println(getDuringString(-41));
+        System.out.println(getDuringString(65, 9));
     }
+
+
+    private static String getDuringString(long minutes, long seconds) {
+        if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
+            return INVALID_VALUE_MESSAGE;
+        }
+
+        long hours = minutes / 60;
+        long remainingMinutes = minutes % 60;
+
+        String hoursString = hours + "h";
+        if (hours < 10) {
+            hoursString = "0" + hoursString;
+        }
+
+
+        String minutesString = remainingMinutes + "m";
+        if (remainingMinutes < 10) {
+            minutesString = "0" + minutesString;
+        }
+
+        String secondssString = seconds + "s";
+        if (seconds < 10) {
+            secondssString = "0" + secondssString;
+        }
+
+
+
+
+        return  hoursString + " " + minutesString + " " + secondssString + "";
+    }
+
+    private static String getDuringString(long seconds) {
+        if (seconds < 0) {
+            return INVALID_VALUE_MESSAGE;
+        }
+
+        long minutes = seconds / 60;
+        long remainingSeconds = seconds % 60;
+
+        return getDuringString(minutes, remainingSeconds);
+    }
+
 
 
     public static void strings() {
