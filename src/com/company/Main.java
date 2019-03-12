@@ -28,6 +28,29 @@ public class Main {
         printDayOfWeek(4);
         printDayOfWeek(5);
         printDayOfWeek(6);
+
+        /// for loop
+        printForStatement();
+        calculateInterestRate();
+
+    }
+
+
+    private static void printForStatement(){
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Loop " + i + " hello!");
+        }
+    }
+
+
+    private static void calculateInterestRate(){
+        for (int i = 2; i < 9; i++) {
+            System.out.println("10000.0 at " + i + "% interest = " + calculateInterest(10000.0, i));
+        }
+    }
+
+    public static double calculateInterest(double amount, double interestRate){
+        return (amount * (interestRate / 100));
     }
 
 
