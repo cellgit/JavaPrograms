@@ -36,20 +36,20 @@ public class Main {
     }
 
 
-    private static void printForStatement(){
+    private static void printForStatement() {
         for (int i = 0; i < 5; i++) {
             System.out.println("Loop " + i + " hello!");
         }
     }
 
 
-    private static void calculateInterestRate(){
+    private static void calculateInterestRate() {
         for (int i = 2; i < 9; i++) {
             System.out.println("10000.0 at " + i + "% interest = " + calculateInterest(10000.0, i));
         }
     }
 
-    public static double calculateInterest(double amount, double interestRate){
+    public static double calculateInterest(double amount, double interestRate) {
         return (amount * (interestRate / 100));
     }
 
