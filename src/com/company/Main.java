@@ -17,6 +17,47 @@ public class Main {
         System.out.println(getDuringString(3945L));
         System.out.println(getDuringString(-41));
         System.out.println(getDuringString(65, 9));
+
+
+        /// lesson 44: day of week
+        printDayOfWeek(-1);
+        printDayOfWeek(0);
+        printDayOfWeek(1);
+        printDayOfWeek(2);
+        printDayOfWeek(3);
+        printDayOfWeek(4);
+        printDayOfWeek(5);
+        printDayOfWeek(6);
+    }
+
+
+    private static void printDayOfWeek (int day) {
+        switch (day) {
+            case 0:
+                System.out.println("Sunday");
+                break;
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuseday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thurday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("Invalid Day");
+                break;
+        }
     }
 
 
