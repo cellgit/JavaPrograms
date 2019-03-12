@@ -5,7 +5,7 @@ public class Main {
     private static final String INVALID_VALUE_MESSAGE = "Invalid value";
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
 //        byteShortInt();
 //        floatAndDouble();
@@ -31,7 +31,7 @@ public class Main {
     }
 
 
-    private static void printDayOfWeek (int day) {
+    private static void printDayOfWeek(int day) {
         switch (day) {
             case 0:
                 System.out.println("Sunday");
@@ -86,9 +86,7 @@ public class Main {
         }
 
 
-
-
-        return  hoursString + " " + minutesString + " " + secondssString + "";
+        return hoursString + " " + minutesString + " " + secondssString + "";
     }
 
     private static String getDuringString(long seconds) {
@@ -101,7 +99,6 @@ public class Main {
 
         return getDuringString(minutes, remainingSeconds);
     }
-
 
 
     public static void strings() {
@@ -124,7 +121,6 @@ public class Main {
         lastString = lastString + doubleNumber;
         System.out.println("The doubleNumber lastString Result is: : " + lastString);
     }
-
 
 
     public static void charAndBoolean() {
@@ -202,19 +198,6 @@ public class Main {
         System.out.println("myLongDiv = " + myLongDiv);
         System.out.println("shortMulti = " + shortMulti);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
